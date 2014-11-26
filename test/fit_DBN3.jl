@@ -1,4 +1,4 @@
-include("dbn/DBN.jl")
+include(joinpath(dirname(@__FILE__), "../src/DBN.jl")
 using HDF5, JLD
 
 data_layer = HDF5DataLayer(name="train-data", source="train.txt", batch_size=1024)
